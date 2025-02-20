@@ -18,7 +18,7 @@ fi
 # https://github.com/kubernetes-sigs/kind/issues/2875
 # https://github.com/containerd/containerd/blob/main/docs/cri/config.md#registry-configuration
 # See: https://github.com/containerd/containerd/blob/main/docs/hosts.md
-cat <<EOF | kind create cluster --config=kind-cluster-kas-config.yaml
+cat <<EOF | kind create cluster --config=kind-cluster-kas.yaml
 EOF
 
 # 3. Add the registry config to the nodes
